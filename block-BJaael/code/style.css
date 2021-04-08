@@ -1,0 +1,30 @@
+.flex   {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0rem auto;
+  
+}
+
+
+
+.box  {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+h1 {
+   text-align: center;
+}
