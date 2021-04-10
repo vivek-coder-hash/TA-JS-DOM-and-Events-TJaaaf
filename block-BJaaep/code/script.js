@@ -1,4 +1,4 @@
-let div  = document.querySelectorAll(".wrapper")
+/*let div  = document.querySelectorAll(".wrapper")
 
 
 let firstwrapper  = div[0]
@@ -28,4 +28,32 @@ number.forEach(function(el) {
         firstli[el-1].innerText =el
     })
 
+})  */
+
+
+let firstboxes  =document.querySelectorAll(".first li")
+let secondbox  = document.querySelectorAll(".second")
+
+firstboxes.forEach(function(el , i) {
+    el.addEventListener("click" , function(event) {
+        event.target.innerText = i+1
+    })
+
+    /*setTimeout(()=> {
+        Event.target.innerText = "" ;
+    } , 5000)*/
+
+    
+})
+
+
+secondbox.addEventListener("click" ,(event)=> {
+
+   let text = event.target.dataset.text ;
+   event.target.innerText =text ;
+
+   /*setTimeout(()=> {
+        Event.target.innerText = "" ;
+    } , 5000)*/
+    
 })
